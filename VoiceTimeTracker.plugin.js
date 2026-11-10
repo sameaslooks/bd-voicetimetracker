@@ -2,10 +2,11 @@
  * @name VoiceTimeTracker
  * @author sameaslooks
  * @authorLink https://github.com/sameaslooks
- * @version 1.0.0
+ * @version 1.0.1
  * @description Tracks and displays how long each user has been sitting in a voice channel.
  * @source https://github.com/sameaslooks/bd-voicetimetracker
  * @website https://github.com/sameaslooks
+ * @updateUrl https://raw.githubusercontent.com/sameaslooks/bd-voicetimetracker/refs/heads/master/VoiceTimeTracker.plugin.js
  */
 
 module.exports = class VoiceTimeTracker {
@@ -416,7 +417,7 @@ module.exports = class VoiceTimeTracker {
                 "white-space:nowrap"
             ].join(";") + ";";
 
-            const usernameEl = row.querySelector("[class*='username__']");
+            const usernameEl = row.querySelector("[class*='username_']");
             if (!usernameEl) continue;
 
             // Save original inline style so we can restore on stop().
